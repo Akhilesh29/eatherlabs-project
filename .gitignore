@@ -1,0 +1,16 @@
+# Backend: do not save in codebase
+backend/uploads/
+backend/reports/
+backend/extracted/
+
+# Dependencies and env
+node_modules/
+backend/venv/
+.env
+*.local
+
+# Build and IDE
+dist/
+.vscode/
+.idea/
+.DS_Store

@@ -1,0 +1,16 @@
+# Do not save uploads, reports, or extracted data in codebase
+uploads/
+reports/
+extracted/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+.env
+*.egg-info/
+.eggs/
