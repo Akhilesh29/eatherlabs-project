@@ -127,45 +127,6 @@ The frontend automatically proxies `/api` requests to the backend at `http://127
 
 ---
 
-## Project Structure
-
-```
-eatherlabs project/
-├── README.md
-├── backend/
-│   ├── requirements.txt
-│   ├── uploads/          # Uploaded files (created automatically)
-│   ├── extracted/        # Extracted data (created automatically)
-│   ├── reports/          # Generated reports (created automatically)
-│   └── app/
-│       ├── main.py              # FastAPI app entry point
-│       ├── config.py            # Settings (upload/extract/report dirs)
-│       ├── parsers/
-│       │   ├── pdf_parser.py    # PDF → structured data
-│       │   ├── excel_parser.py  # Excel → structured data
-│       │   └── router.py         # File type dispatcher
-│       ├── schemas/
-│       │   ├── document.py      # DrawingData, SpecsData, SOVData
-│       │   ├── comparison.py    # Contradiction, ComparisonResult
-│       │   └── report.py        # ReportSummary
-│       ├── services/
-│       │   ├── comparison.py    # Cross-comparison logic
-│       │   └── report.py        # Report generation
-│       └── routes/
-│           ├── documents.py     # Upload/list endpoints
-│           ├── compare.py       # Comparison endpoint
-│           └── report.py        # Report generation/download
-└── frontend/
-    ├── vite.config.ts          # Vite config (API proxy)
-    ├── package.json
-    ├── index.html
-    └── src/
-        ├── main.ts              # Main app logic
-        └── style.css            # Styles
-```
-
----
-
 ## Supported File Types
 
 ### PDF
