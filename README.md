@@ -185,15 +185,5 @@ The frontend automatically proxies `/api` requests to the backend at `http://127
 
 ---
 
-## Future Enhancements (Optional)
 
-- **OCR Support** - Tesseract for scanned PDFs
-- **LLM Integration** - GPT-4o/Claude for better document understanding
-- **Database** - PostgreSQL for persistent storage
-- **Search** - Elasticsearch for full-text search
-- **Background Jobs** - Queue system (Celery) for processing 100+ files
-- **Authentication** - User accounts and project management
-- **Deployment** - Railway, Render, or AWS
-
----
 
