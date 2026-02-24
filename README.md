@@ -1,8 +1,8 @@
-# Document Verification Engine (Phase 1)
+# Document Verification Engine
 
 ## Project Description
 
-A web application that automates document verification for construction, lending, and compliance workflows. The system ingests multiple PDF and Excel documents (drawings, specifications, budgets, SOVs), extracts structured data from each, cross-compares them to find contradictions, and generates downloadable reports.
+The system ingests multiple PDF and Excel documents (drawings, specifications, budgets, SOVs), extracts structured data from each, cross-compares them to find contradictions, and generates downloadable reports.
 
 ### What It Does
 
@@ -14,14 +14,6 @@ A web application that automates document verification for construction, lending
    - Budget overruns (e.g., total budget $10.2M vs loan amount $10M)
 4. **Generates Reports** - Creates downloadable JSON and TXT reports with all contradictions
 
-### Use Cases
-
-- **Construction Projects** - Verify drawings match specs and budgets
-- **Lending/Finance** - Check loan amounts against project budgets
-- **Compliance & Audits** - Find inconsistencies across contract documents
-- **Procurement** - Validate purchase orders against specifications
-
----
 
 ## Tech Stack
 
@@ -201,8 +193,8 @@ eatherlabs project/
    - `sov.xlsx` → Extracted: `{ line_items: [{ line_item: "Fire Dampers", budgeted_qty: 15 }] }`
 
 2. **Compare** → Finds contradictions:
-   - ❌ Fire dampers: Drawing=22, SOV=15 → Missing 7 in SOV
-   - ❌ Door material: Specs=steel, SOV=aluminum → Material mismatch
+   - Fire dampers: Drawing=22, SOV=15 → Missing 7 in SOV
+   - Door material: Specs=steel, SOV=aluminum → Material mismatch
 
 3. **Download Report** → JSON/TXT with full details
 
@@ -244,6 +236,3 @@ eatherlabs project/
 
 ---
 
-## License
-
-This project is part of a technical assessment/assignment.
